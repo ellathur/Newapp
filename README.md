@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README  is about my first webapp in rails.
 
 Things you may want to cover:
 
