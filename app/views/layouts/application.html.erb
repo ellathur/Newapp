@@ -7,7 +7,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
@@ -31,11 +31,11 @@
         </div> <!--end navbar-header -->
         <div class="navbar-collapse collapse ">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="home">Home</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="services">Services</a></li>
-            <li><a href="contact">Contact</a></li>
-            <li><a href="faqs">FAQs</a></li>
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "About", static_pages_about_path %></li>
+            <li><%= link_to "Services", "#" %></li>
+            <li><%= link_to "Contact", static_pages_contact_path %></li>
+            <li><%= link_to "FAQ", "#" %></li>
           </ul>
         </div>
       </div><!--endcontainer fluid -->
