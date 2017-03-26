@@ -20,7 +20,10 @@
 # Ignore Byebug command history file.
 .byebug_history
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 database.yml
 >>>>>>> 073a51763ffac13481b6cbf6c632072dda36c7c8
 database.yml
+=======
+>>>>>>> dcd53cdaecb33b3e88b99cff8621b15b01cdc1d3
