@@ -4,11 +4,12 @@
 <div class="container-fluid">
   <div class="row">
     <% @products.each do |product| %>
-      <div class="col-sm-2 col-md-4">
+      <div class="col-sm-2 col-md-4 products">
         <% if product.image_url.present? %>
         <%= image_tag(product.image_url, class: "img-responsive carousel-image") %>
         <% end %>
         <h1><%= product.name %></h1>
+        <%= link_to 'Learn More', product%>
         <p><%= product.description %></p>
         <p><strong>Colour:</strong> <%= product.colour%></p>
         <p><strong>Price: £</strong> <%= product.price%></p>
