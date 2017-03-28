@@ -8,8 +8,7 @@
         <% if product.image_url.present? %>
         <%= image_tag(product.image_url, class: "img-responsive carousel-image") %>
         <% end %>
-         <h1><%= product.name %></h1>
-        <%= link_to 'Learn More', product%>
+         <h1><%= link_to product.name, product, class: 'productname' %></h1>
         <p><%= product.description %></p>
         <p><strong>Colour:</strong> <%= product.colour%></p>
         <p><strong>Price: £</strong> <%= product.price%></p>
