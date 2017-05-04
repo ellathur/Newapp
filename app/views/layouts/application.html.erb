@@ -38,6 +38,11 @@
             <li><%= link_to "FAQ", "#" %></li>
           </ul>
         </div>
+        <%= form_tag("/products", method: "get", class: 'navbar-form navbar-right') do %>
+          <%= label_tag(:q, "Search for:") %>
+          <%= text_field_tag(:q) %>
+          <%= submit_tag("Search") %>
+        <% end %>
       </div><!--endcontainer fluid -->
     </nav><!-- end navbar-->
 

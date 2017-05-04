@@ -1,12 +1,9 @@
 <p id="notice"><%= notice %></p>
 <h1 class="heading">Products</h1>
 
-<div class="container-fluid">
+<div class="container-fluid products">
   <div class="row">
-  <% @products.each do |product| %>
-      <%= render @products %>
-    <% end %>
-    <%= @test_variable %>
+    <%= render @products %>
   </div>
 </div>
 <br>
