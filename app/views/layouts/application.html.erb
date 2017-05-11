@@ -63,15 +63,15 @@
         </div>
       </div><!--endcontainer fluid -->
     </nav><!-- end navbar-->
+      <div class="row">
+      <% if alert %>
+        <p class="alert alert-notice" role="alert"><%= alert %></p>
+      <% end %>
 
-    <% if alert %>
-      <p class="alert alert-notice" role="alert"><%= alert %></p>
-    <% end %>
-
-    <% if notice %>
-      <p  id="notice" class="alert alert-info" role="alert"><%= notice %></p>
-    <% end %>
-
+      <% if notice %>
+        <p  id="notice" class="alert alert-info" role="alert"><%= notice %></p>
+      <% end %>
+     </div>
     <div class="page-wrapper">
       <%= yield %>
     </div>
