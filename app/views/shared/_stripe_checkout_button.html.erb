@@ -1,0 +1,13 @@
+<script
+  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+  data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+  data-image="<%= @product.image_url %>"
+  data-name="Cafe Nala"
+  data-description="<%= @product.name %>"
+  data-amount="<%= @product.price*100 %>"
+  data-locale="auto"
+  data-zip-code="true"
+  data-currency="gbp">
+</script>
+
+<%= hidden_field_tag(:product_id, @product.id) %>
