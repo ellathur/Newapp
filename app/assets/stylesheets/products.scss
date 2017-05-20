@@ -13,17 +13,41 @@
 
 .productname {
   color: #8F2E54;
+  text-align: center;
 }
 .show {
   margin-top: 100px;
   padding-top: 50px;
-  border:1px solid #8F2E54;
+
 }
-
-
 
 .all-forms {
   width: 70%;
   margin: 10px auto;
   padding-top: 50px;
+}
+
+
+.product-show {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.product-show img {
+  padding: 20px 0;
+  max-width: 100%;
+}
+
+.specs {
+  padding: 0 40px;
+}
+
+.product-show hr {
+  width: 100%;
+}
+
+
+.product-description,
+.pages {
+  padding-left: 0;
 }
