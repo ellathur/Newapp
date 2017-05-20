@@ -5,9 +5,8 @@
   data-name="Cafe Nala"
   data-description="<%= @product.name %>"
   data-amount="<%= @product.price*100 %>"
+  data-email="<%= current_user.email %>"
   data-locale="auto"
   data-zip-code="true"
   data-currency="gbp">
 </script>
-
-<%= hidden_field_tag(:product_id, @product.id) %>
