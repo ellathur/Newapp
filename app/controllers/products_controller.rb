@@ -31,6 +31,7 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.json
   def create
+    byebug
     @product = Product.new(product_params)
 
     respond_to do |format|
