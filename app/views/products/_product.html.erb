@@ -1,5 +1,6 @@
 <%# @products.each do |product| %>
  <div class="col-sm-12 col-md-4 products">
+   <% cache product do %>
     <% if product.image_url.present? %>
     <%= image_tag(product.image_url, class: "img-responsive") %>
     <% end %>
@@ -7,5 +8,7 @@
     <p><%= product.description %></p>
     <p><%= product.colour%></p>
     <p><strong>Price: £</strong> <%= product.price%></p>
-  </div><!-- /col -->
+  <% end %>
+
+</div><!-- /col -->
 <%# end %>

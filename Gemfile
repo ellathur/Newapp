@@ -66,3 +66,5 @@ gem 'stripe'
 gem 'will_paginate', '~> 3.1.0'
 
 gem 'rails-controller-testing'
+
+gem 'dalli'

@@ -2,9 +2,11 @@
   <p id="notice"><%= notice %></p>
   <div class="row show">
     <div class="col-xs-12 col-md-12 thumbnail">
+      <% cache @product do %>
       <h2 class="caption productname"><%= @product.name %></h2>
         <% unless @product.image_url.blank? %>
         <%= image_tag(@product.image_url, width: "550", class: "thumbnail img-zoom", data_zoom_image: @product.image_url) %>
+      <% end %>
       <% end %>
       <div class="col-xs-12 product-description">
         <p>

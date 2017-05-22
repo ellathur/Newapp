@@ -1,10 +1,11 @@
-<div class="container-fluid">
-<h1>New Product</h1>
 
-<%= render 'form', product: @product %>
+<div class="container-fluid">
+  <h1>New Product</h1>
+  <%= render 'form', product: @product %>
 
   <div class="col-sm-12">
     <%= link_to 'Show', @product, class:'btn btn-default' %> |
     <%= link_to 'Back', products_path, class:'btn btn-default' %>
   </div>
+
 </div> <!-- end container-fluid -->
