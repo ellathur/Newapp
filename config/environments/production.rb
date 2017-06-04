@@ -98,8 +98,8 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'https://csaguzey.herokuapp.com/' }
 
   # SendGrid
- config.action_mailer.delivery_method = :smtp
- ActionMailer::Base.smtp_settings = {
+  config.action_mailer.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
    :address        => 'smtp.sendgrid.net',
    :port           => '587',
    :authentication => :plain,
@@ -107,6 +107,8 @@ Rails.application.configure do
    :password       => ENV['SENDGRID_PASSWORD'],
    :domain         => 'heroku.com',
    :enable_starttls_auto => true
- }
+  }
+  config.web_socket_server_url = "wss://csaguzey.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://csaguzey.herokuapp.com', 'https://csaguzey.herokuapp.com']
 
 end

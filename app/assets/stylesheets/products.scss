@@ -9,17 +9,20 @@
 .show, {
   margin: 20px auto;
   padding: 25px;
+  float: right;
 }
+
 
 .productname {
   color: #8F2E54;
   text-align: center;
 }
-.show {
+
+/*.show {
   margin-top: 100px;
   padding-top: 50px;
 
-}
+}**/
 
 .all-forms {
   width: 70%;
@@ -30,7 +33,7 @@
 
 .product-show {
   max-width: 70%;
-  margin: 0 auto;
+  
 }
 
 .product-show img {
