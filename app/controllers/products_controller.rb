@@ -12,12 +12,13 @@ class ProductsController < ApplicationController
       @products = Product.all
     end
 
+    @products = @products.paginate(:page => params[:page], :per_page => 6)
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
-    @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 10)
+    @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 6)
     @product.viewed!
   end
 
