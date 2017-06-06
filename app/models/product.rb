@@ -5,7 +5,7 @@ class Product < ApplicationRecord
   validates :name, :description, :image_url, :colour, :price, presence: true
 
   def self.search(search_term)
-    Product.where("name ilike ?", "%#{search_term}%")
+    Product.where("name ILIKE ?", "%#{search_term}%")
   end
 
   def highest_rating_comment

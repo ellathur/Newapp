@@ -30,12 +30,14 @@
           </div> <!--end projectName -->
         </div> <!--end navbar-header -->
         <div class=" collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav">
             <li><%= link_to "Home", root_path %></li>
             <li><%= link_to "About", static_pages_about_path %></li>
             <li><%= link_to "Products", products_path %></li>
             <li><%= link_to "Contact", static_pages_contact_path %></li>
             <li><%= link_to "FAQ", "#" %></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
             <li>
               <%= form_tag("/products", method: "get", class: 'navbar-form navbar-right') do %>
                 <%= label_tag(:q, "Search for:") %>
@@ -43,8 +45,6 @@
                 <%= submit_tag("Search") %>
               <% end %>
             </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
             <li>
              <% if user_signed_in? %>
                <%= link_to 'Edit', edit_user_registration_path %>
