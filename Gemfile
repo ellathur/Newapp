@@ -70,3 +70,5 @@ gem 'rails-controller-testing'
 gem 'dalli'
 
 gem 'redis-rails'
+
+gem 'pg_search'
