@@ -35,4 +35,4 @@ production:
   adapter: postgresql
   database: nameofapp_production
   username: chris
-  password: 
+  password: salena1278

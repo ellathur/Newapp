@@ -18,6 +18,7 @@ class PaymentsController < ApplicationController
 
     if charge.paid
       Order.create(product_id: @product.id, user_id: @user.id, total: @product_price.to_i,)
+      UserMailer.payment_confirmation(@user, @product).deliver_now
       redirect_to product_path(@product), notice: 'Purchase Successful. Thank You!'
     end
 
