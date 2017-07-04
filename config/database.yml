@@ -29,10 +29,10 @@ test:
   adapter: postgresql
   database: nameofapp_test
   username: chris
-  password: salena1278
+  password: 
 
 production:
   adapter: postgresql
   database: nameofapp_production
   username: chris
-  password: salena1278
+  password: 
